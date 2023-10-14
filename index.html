@@ -4,16 +4,18 @@
 	<title>alEKPA</title>
 </head>
 <body>
-	<h1>Hello World! <img src="https://www.svgrepo.com/show/13672/play-button.svg" alt="click me" height="15" width="15" id="play"></h1>
+	<h1 id="text">Hello World! <img src="https://www.svgrepo.com/show/13672/play-button.svg" alt="click me" height="15" width="15" id="play"></h1>
 <script>
 document.getElementById('play').onclick=function(){
-	var video = document.createElement('iframe');
-	video.setAttribute("allowFullscreen", 1)
-	video.setAttribute("width", "640")
-	video.setAttribute("height", "480")
-	video.setAttribute("src", "https://drive.google.com/file/d/149hAP-rv_5uvu_Ssg0JOXXAwjrNfU5uC/preview")
+	var video = document.createElement('video');
+	video.setAttribute("controls", 1)
+	video.setAttribute("autoplay", 1)
+	video.setAttribute("src", "folder/tt0126029GR.mkv")
 	document.body.appendChild(video)
 	this.remove()
+	document.body.style.backgroundColor = 'grey'
+
+	document.getElementById('text').innerHTML = 'Σρεκ'
 };
 </script>
 </body>
