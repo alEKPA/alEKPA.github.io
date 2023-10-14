@@ -8,9 +8,9 @@
 <script>
 document.getElementById('play').onclick=function(){
 	var video = document.createElement('iframe');
-	video.setAttribute("controls", 1)
-	video.setAttribute("title", "Shrek Movie")
-	video.setAttribute("autoplay", 1)
+	video.setAttribute("allowFullscreen", 1)
+	video.setAttribute("width", "640")
+	video.setAttribute("height", "480")
 	video.setAttribute("src", "https://drive.google.com/file/d/149hAP-rv_5uvu_Ssg0JOXXAwjrNfU5uC/preview")
 	document.body.appendChild(video)
 	this.remove()
